@@ -48,4 +48,7 @@ echo "== Customize docker daemon"
 cat <<EOF >${B2D_PERSISTENT_DIR}/profile
 # Insert custom Docker daemon settings here
 
+EXTRA_ARGS='--dns 172.17.42.1 --dns 8.8.4.4 --dns 8.8.8.8 --dns-search service.consul'
+DOCKER_TLS='no'
+
 EOF
