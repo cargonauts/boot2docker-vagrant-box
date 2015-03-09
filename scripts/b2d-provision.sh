@@ -52,3 +52,9 @@ EXTRA_ARGS='--dns 172.17.42.1 --dns 8.8.4.4 --dns 8.8.8.8 --dns-search service.c
 DOCKER_TLS='no'
 
 EOF
+
+docker pull cargonauts/helloworld-python
+docker pull redis
+docker pull cargonauts/consul-web
+docker pull gliderlabs/registrator
+docker pull cargonauts/consul-haproxy
