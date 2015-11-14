@@ -59,9 +59,8 @@ sudo cp -r /var/lib/boot2docker/tls /vagrant/
 Next, you need to configure your Docker environment :
 ```
 # For VirtualBox provider:
-export DOCKER_CERT_PATH=`pwd`/tls
-export DOCKER_HOST=tcp://192.168.10.10:2376
-export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.190.85:2376
+unset DOCKER_TLS_VERIFY
 
 # For Parallels provider:
 export DOCKER_CERT_PATH=`pwd`/tls
